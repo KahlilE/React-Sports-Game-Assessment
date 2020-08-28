@@ -1,6 +1,5 @@
 import Game from './Components/game/Game.js';
-import Team from './Components/team/Team.js';
-import ScoreBoard from './Components/scoreboard/ScoreBoard';
+
 
 import React from 'react';
 import './App.css';
@@ -8,22 +7,22 @@ import './App.css';
 function App(props) {
   const raccoons = {
     name: 'Russiaville Raccoons',
-    logoSrc: './assets/images/raccoon.png'
+    logoSrc: 'assets/images/chaos.jpg'
   }
 
   const squirrels = {
     name: 'Sheridan Squirrels',
-    logoSrc: './assets/images/squirrel.png'
+    logoSrc: './assets/images/darkness.jpg'
   }
 
   const bunnies = {
     name: 'Burlington Bunnies',
-    logoSrc: './assets/images/bunny.png'
+    logoSrc: './assets/images/light.jpg'
   }
 
   const hounds = {
     name: 'Hammond Hounds',
-    logoSrc: './assets/images/hound.png'
+    logoSrc: './assets/images/rose.jpeg'
   }
 
   return (
@@ -33,6 +32,11 @@ function App(props) {
         homeTeam={squirrels}
         visitingTeam={raccoons}
       />
+      <div>
+
+      <img src='public\assets\images\chaos.jpg' alt=''/>
+
+      </div>
       <Game
         venue="Sheridan Arena"
         homeTeam={bunnies}
